@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { Contact, CallLog, SimConfig, ActiveCallState } from './types';
-import { initialContacts, initialCallLogs, defaultSettings } from './initialData';
-import { playKeypadTone, triggerHaptic, playCallEndTone } from './audio';
+import { INITIAL_CONTACTS, INITIAL_CALL_LOGS, INITIAL_SIMS } from './data/initialData';
 import StatusBar from './components/StatusBar';
 import SearchHeader from './components/SearchHeader';
 import CallHistoryList from './components/CallHistoryList';
